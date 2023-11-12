@@ -9,15 +9,12 @@ namespace: idpkathon-dev
 # namespace: team-viseu-idp_geekathon-dev
 
 resources:
-  - ../../base
-  - ingress.yaml
+- ../../base
+- ingress.yaml
 
-images:
   # ATENTION name = image.name NOT name = spec.containers[0].name
-  - name: ghcr.io/xgeeks-geekathon/team-viseu
-    newTag: v1
-  - name: ghcr.io/xgeeks-geekathon/team-viseu-datafeeder
-    newTag: v1
-# replicas:
-#   - name: team-viseu # the deployment name
-#     count: 1
+images:
+- name: ghcr.io/xgeeks-geekathon/team-viseu
+  newTag: v1
+- name: ghcr.io/xgeeks-geekathon/team-viseu-datafeeder
+  newTag: 118aaad
